@@ -1,6 +1,6 @@
 const arr = [1,2,3];
 
-const includes = (item: number) => arr.includes.bind(arr);
+const includes = arr.includes;
 
 includes(1);//failed
 
