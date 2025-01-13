@@ -4,11 +4,13 @@ class Logger {
     }
 }
 
+//Loget Console! Logger for Backendlogger!
+
 class Consumer {
 
     _logger: Logger;
 
-    constructor(logger: Logger) {
+    constructor(logger: ILogger) {
         this._logger = logger
     }
 

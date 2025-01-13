@@ -1,7 +1,8 @@
 //what can cause rerender of FC?
 
 
-const ShowArr = (params: {items: Array<number>}) => <div>{params.items}</div>;
+const ShowArr = memo((params: {items: Array<number>}) => 
+    <div>{params.items}</div>, () => items > items2);
 
 const App = () => {
     const [val, setVal] = useState([1,2]);
