@@ -10,7 +10,7 @@ class Consumer {
 
     _logger: Logger;
 
-    constructor(logger: ILogger) {
+    constructor(logger: Logger) {
         this._logger = logger
     }
 
